@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <!-- kiwi -->
+</head>
+<body class="index-body" id="indexBody">
+    <header>
+        <div class="header-main" id="th2">
+            <div class="header-icon">
+               <img src="img/lpLogo.svg" class="lp-logo" id="th1" onclick="changeTheme()">
+            </div>
+            <div class="header-right">
+                <a id="menu-btn" class="mobile-nav-btn" href="#" onclick="mobilePopout()">
+                    <div class="mobile-nav-line" id="th3-0"></div>
+                    <div class="mobile-nav-line" id="th3-1"></div>
+                    <div class="mobile-nav-line" id="th3-2"></div>
+                </a>
+
+            </div>
+        </div>
+
+
+
+    </header>
+    <div class="header-secondary" id="h-s">
+        <div class="div-1">
+            <p>ABOUT ME</p>
+
+            <div class="links-menu-1">
+                <p>hello</p>
+                <p>Hello</p>
+                <p>Hello</p>
+            </div>
+
+        </div>
+
+        <div class="div-2">
+            <p>PROJECTS</p>
+
+            <div class="links-menu-2">
+                <p>hello2</p>
+            </div>
+
+        </div>
+
+        <div class="div-3">
+          <p>TEMPORARY</p>
+
+          <div class="links-menu-3">
+              <p>hello3</p>
+          </div>
+
+        </div>
+
+    </div>
+    <div class="clickable-area" id="click">
+        <div class="links" id="links">
+            <div class="links-header">
+                <p>Hello</p>
+
+                <div class="links-close">
+                    <img src="img/x.svg" class="links-close-icon" onclick="mobileHide()">
+                </div>
+            </div>
+            <div class="links-boxes">
+                <p class="link">1</p>
+            </div>
+            <div class="links-boxes">
+                <p class="link">1</p>
+            </div>
+            <div class="links-boxes">
+                <p class="link">1</p>
+            </div>
+        </div>
+        <div class="links-c" onclick="mobileHide()"></div>
+    </div>
+    <div class="content">
+        <div class="indicators">
+            <div class="recent-1-indicator" id="r1i"></div>
+            <div class="recent-2-indicator" id="r2i"></div>
+            <div class="recent-3-indicator" id="r3i"></div>
+        </div>
+        <div class="recent-1" id="r1">
+          <script src="content/recent-1.js"></script>
+        </div>
+        <div class="recent-2" id="r2">
+          <script src="content/recent-2.js"></script>
+        </div>
+        <div class="recent-3" id="r3">
+          <script src="content/recent-3.js"></script>
+        </div>
+        <div class="content-arrow-right" onclick="arrow('right')">
+          <svg fill = 'white'>
+            <path d="M1 33L13 17L1 1" class="stroke-target" stroke-width="2"></path>
+          </svg>
+        </div>
+        <div class="content-arrow-left" onclick="arrow('left')">
+          <svg fill = 'white'>
+            <path d="M14 1L2 17L14 33" class="stroke-target" stroke-width="2"></path>
+          </svg>
+        </div>
+
+
+
+</script>
+
+    </div>
+    <footer>
+
+
+
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

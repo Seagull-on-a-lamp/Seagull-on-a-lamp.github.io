@@ -1,7 +1,6 @@
 var w = window.innerWidth
-console.log(w)
+console.log('Hello')
 var i = window.innerHeight
-console.log(i)
 if(w > 769) {
   document.documentElement.style.setProperty('--sc-Height', (i-107)+'px');
 } else {
@@ -65,7 +64,7 @@ function arrow(direction) {
       var d2 = document.getElementById('r3i')
       d2.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d3 = document.getElementById('r2i')
-      d3.style.backgroundColor = "#109ee6"
+      d3.style.backgroundColor = "var(--blue-2)"
     } else if ( slide == 2 & direction == 'left' ) {
       slide = 1
 
@@ -82,7 +81,7 @@ function arrow(direction) {
       s3.style.left = "-100%"
 
       var d1 = document.getElementById('r1i')
-      d1.style.backgroundColor = "#109ee6"
+      d1.style.backgroundColor = "var(--blue-2)"
       var d2 = document.getElementById('r2i')
       d2.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d3 = document.getElementById('r3i')
@@ -105,7 +104,7 @@ function arrow(direction) {
       var d1 = document.getElementById('r1i')
       d1.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d2 = document.getElementById('r3i')
-      d2.style.backgroundColor = "#109ee6"
+      d2.style.backgroundColor = "var(--blue-2)"
       var d3 = document.getElementById('r2i')
       d3.style.backgroundColor = "rgba(0, 0, 0, 0)"
     } else if ( slide == 1 & direction == 'left' ) {
@@ -128,7 +127,7 @@ function arrow(direction) {
       var d2 = document.getElementById('r3i')
       d2.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d3 = document.getElementById('r2i')
-      d3.style.backgroundColor = "#109ee6"
+      d3.style.backgroundColor = "var(--blue-2)"
     }  else if ( slide == 3 & direction == 'right' ) {
       slide = 1
 
@@ -145,7 +144,7 @@ function arrow(direction) {
       s3.style.left = "-100%"
 
       var d1 = document.getElementById('r1i')
-      d1.style.backgroundColor = "#109ee6"
+      d1.style.backgroundColor = "var(--blue-2)"
       var d2 = document.getElementById('r3i')
       d2.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d3 = document.getElementById('r2i')
@@ -168,7 +167,7 @@ function arrow(direction) {
       var d1 = document.getElementById('r1i')
       d1.style.backgroundColor = "rgba(0, 0, 0, 0)"
       var d2 = document.getElementById('r3i')
-      d2.style.backgroundColor = "#109ee6"
+      d2.style.backgroundColor = "var(--blue-2)"
       var d3 = document.getElementById('r2i')
       d3.style.backgroundColor = "rgba(0, 0, 0, 0)"
     }

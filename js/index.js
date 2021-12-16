@@ -174,7 +174,7 @@ function arrow(direction) {
   }
 
 }
-
+/*
 function changeTheme() {
   var currentTheme = localStorage.getItem('Theme');
   if (currentTheme == 'light') { // this is dark theme
@@ -235,3 +235,4 @@ if (localStorage.getItem('Theme') != 'dark' & localStorage.getItem('Theme') != '
   var clr2 = document.getElementById("th2")
   clr2.style= "background-color: white";
 }
+*/

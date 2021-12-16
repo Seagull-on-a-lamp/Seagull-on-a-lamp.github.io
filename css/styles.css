@@ -2,10 +2,12 @@
 
 :root {
   --sc-Height: 823px ;
-  --blue-1: #4080bf;
-  --blue-2: #3973ac;
-  --blue-3: #336699;
-  --border-colour:#b8b8b8;
+  --blue-1: #E9EAEC;
+  --blue-2: #90ADC6;
+  --blue-3: #E9EAEC;
+  --border-colour:#FAD02C;
+  --bg-colour:#333652;
+  --light-colour:#e6e6e6;
 }
 
 body {
@@ -46,7 +48,7 @@ body {
     }
 
     .mobile-nav-line {
-        background-color: black;
+        background-color: var(--light-colour);
         height: 3px;
         width: 100%;
         border-radius: 1.5px;
@@ -124,7 +126,7 @@ body {
 /* DESKTOP SECTION */
 
 .header-main { /* The header at the top that contains the logo */
-    background: white;
+    background: var(--bg-colour);
     border-bottom: 1px solid var(--border-colour);
     display: flex;
     justify-content: center;
@@ -136,6 +138,7 @@ body {
 .lp-logo {
     height: 40px;
     margin: 5px;
+    filter: invert(89%) sepia(3%) saturate(0%) hue-rotate(171deg) brightness(98%) contrast(109%);
  /* To get the filter use https://codepen.io/sosuke/pen/Pjoqqp */
 } /* The logo contained in .header-main*/
 

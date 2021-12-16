@@ -2,8 +2,11 @@
 
 :root {
   --sc-Height: 823px ;
+  --blue-1: #4080bf;
+  --blue-2: #3973ac;
+  --blue-3: #336699;
+  --border-colour:#b8b8b8;
 }
-
 
 body {
     margin: 0px;
@@ -87,7 +90,7 @@ body {
     top: 0px;
 }
 .links-boxes { /* Mobile */
-    border-bottom: 1px solid #b8b8b8;
+    border-bottom: 1px solid var(--border-colour);
     height: 50px;
     margin: 0px;
 }/* Mobile */
@@ -105,7 +108,7 @@ body {
 }
 .links-header { /* Mobile */
     background: rgb(214, 214, 214);
-    border-bottom: 1px solid #b8b8b8;
+    border-bottom: 1px solid var(--border-colour);
     display: flex;
     justify-content: center;
     overflow: visible;
@@ -122,7 +125,7 @@ body {
 
 .header-main { /* The header at the top that contains the logo */
     background: white;
-    border-bottom: 1px solid #b8b8b8;
+    border-bottom: 1px solid var(--border-colour);
     display: flex;
     justify-content: center;
     overflow: visible;
@@ -139,8 +142,8 @@ body {
 @media only screen and (min-width:770px) { /* For desktop */
     .header-secondary { /* Header that contains div-1 div-2 and div-3 */
         background: white;
-        border-bottom: 1px solid #b8b8b8;
-        border-top: 1px solid #b8b8b8;
+        border-bottom: 1px solid var(--border-colour);
+        border-top: 1px solid var(--border-colour);
         display: flex;
         justify-content: center;
         position: sticky;
@@ -178,16 +181,16 @@ body {
 
 .recent-1-indicator {
     position: absolute;
-    background-color: #109ee6;
+    background-color: var(--blue-2);
     width: 10px;
     height: 10px;
     z-index: 12 ;
     border-radius: 6px;
-    border:2px solid #109ee6;
+    border:2px solid var(--blue-2);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    transition: background-color 2s ease
+    transition: background-color 2s ease;
 
 }
 
@@ -199,7 +202,7 @@ body {
     left: 0px;
     z-index: 11 ;
     border-radius: 6px;
-    border:2px solid #109ee6;
+    border:2px solid var(--blue-2);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -214,7 +217,7 @@ body {
     right: 0px;
     z-index: 11 ;
     border-radius: 6px;
-    border:2px solid #109ee6;
+    border:2px solid var(--blue-2);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -292,17 +295,22 @@ body {
   overflow: hidden;
 }
 
+/*the three boxes on the index page*/
+
+
+.divs {
+  height: 50px;
+  width: 34%;
+  transition: width .5s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  cursor: default;
+}
 
 .div-1 { /* Left box in the secondary header */
-    height: 50px;
-    background-color: #56b9ea;
-    width: 34%;
-    transition: width .5s;
+    background-color: var(--blue-1);
     left: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    cursor: default;
 }
 
 .div-1:hover { /* The width of .div-1 changes when you hover over .div-1 */
@@ -310,14 +318,7 @@ body {
 }
 
 .div-2 { /* Middle box in the secondary header */
-    height: 50px;
-    background-color: #109ee6;
-    width: 34%;
-    transition: width .5s;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    cursor: default;
+    background-color: var(--blue-2);
 }
 
 .div-2:hover { /* The width of .div-2 changes when you hover over .div-2 */
@@ -325,30 +326,27 @@ body {
 }
 
 .div-3 { /* Right box in secondary header */
-    height: 50px;
-    background-color: #0c7bb3;
-    width: 34%;
-    transition: width .5s;
+    background-color: var(--blue-3);
     right: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    cursor: default;
-
 }
 
 .div-3:hover { /* The width of .div-3 changes when you hover over .div-3 */
     width: 45%;
 }
 
+/*the dropdowns under the three boxes on the index page*/
+
+.lm {
+  width: 100%;
+  transition: width .5s;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
 .links-menu-1 {
-    background-color: #56b9ea;
-    width: 100%;
-    transition: width .5s;
+    background-color: var(--blue-1);
     left: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
     display: none;
 }
 
@@ -357,12 +355,7 @@ body {
 }
 
 .links-menu-2 { /*right*/
-  background-color: #109ee6;
-  width: 100%;
-  transition: width .5s;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
+  background-color: var(--blue-2);
   display: none;
 }
 
@@ -371,13 +364,8 @@ body {
 }
 
 .links-menu-3 {
-  background-color: #0c7bb3;
-  width: 100%;
-  transition: width .5s;
+  background-color: var(--blue-3);
   right: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
   display: none;
 }
 
